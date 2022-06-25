@@ -67,5 +67,6 @@ export const carouselImage = {
   display: "block",
   overflow: "hidden",
   width: "100%",
+  objectFit: "cover",
   borderRadius: 3,
 };
