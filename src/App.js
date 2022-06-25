@@ -5,6 +5,9 @@ import OptionsTab from "components/OptionsTab";
 import LocationCards from "components/LocationCards";
 import Container from "@mui/material/Container";
 import "./App.css";
+import Footer from "components/Footer";
+import FooterMenu from "components/FooterMenu";
+import { displayOnDesktop } from "themes/commonStyles";
 
 function App() {
   return (
@@ -19,6 +22,12 @@ function App() {
           <Container maxWidth="xl" sx={{ mb: 3 }}>
             <LocationCards />
           </Container>
+        </Box>
+        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <FooterMenu />
+        </Box>
+        <Box sx={displayOnDesktop}>
+          <Footer />
         </Box>
       </Box>
     </>
