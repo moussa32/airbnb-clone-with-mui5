@@ -8,6 +8,7 @@ import "./App.css";
 import Footer from "components/Footer";
 import FooterMenu from "components/FooterMenu";
 import { displayOnDesktop } from "themes/commonStyles";
+import MobileFooter from "components/MobileFooter";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1, hight: 100, overflowY: "scroll" }}>
           <Container maxWidth="xl" sx={{ mb: 3 }}>
             <LocationCards />
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <MobileFooter />
+            </Box>
           </Container>
         </Box>
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
